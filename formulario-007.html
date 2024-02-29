@@ -11,35 +11,37 @@
 
     <Form action="cadastro.php" method="post" autocomplete="on">
 
-        <label for="iestado">Estado:</label>
-        <select name="Estado" id="iestado">
+        <p>
+            <label for="iestado">Estado:</label>
+            <select name="Estado" id="iestado">
+                <option value="" selected>-- escolha --</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+        </p>
+        
+        <p>
+            <label for="imensagem">Mensagem:</label>
+       
+            <textarea name="Mensagem" id="imensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui!">
+            </textarea>
+        </p>
 
-            <option value="" selected>-- escolha --</option>
-
-            <optgroup label="Região Sudeste">       
-                <option value="MG">Minas Gerais</option>
-                <option value="RJ">Rio de Janeiro</option>
-            </optgroup>
-
-            <optgroup label="Região Nordeste">
-                <option value="MA">Maranhão</option>
-                <option value="PE">Pernambuco</option>
-            </optgroup>
-        </select>
-
-        <label for="imensagem">Mensagem:</label>
-        <textarea name="Mensagem" id="imensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui!">   
-
-        </textarea>
-
-        <label for="iprofissao">Profissão:</label>
-        <input type="text" name="profissao" id="iprfissao" list="listaprofissao">
-
-        <Datalist id="listaprofissao">
-            <option value="">Administrador</option>
-            <option value="">Desenvolvedor</option>
-            <option value="">Professor</option>
-        </Datalist>
+        <p>
+            <label for="iprofissao">Profissão:</label>
+            <input type="text" name="profissao" id="iprfissao" list="listaprofissao">
+            <Datalist id="listaprofissao">
+                <option>Administrador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </Datalist>
+        </p>
     </Form>
     
 </body>
